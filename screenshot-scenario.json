@@ -1,0 +1,16 @@
+{
+  "notes": "tapFrac is normalised SCREEN space measured from the TOP-LEFT. UI taps are computed from the real RectTransform over the 1242x2688 canvas reference with the letterbox correction applied: the CanvasScaler expands to 1242x2760 on the 1080x2400 Unity AVD, and AspecterSA (AspectRatioFitter, FitInParent, 1242/2688 = 0.46205) centres a 1242x2688 panel inside it, so a panel point at y lands at (36 + y) / 2760 of the screen. WORLD taps need no correction - camera space is the whole screen - so a gem at world x lands at 0.5 + x / (2 * halfWidth), which reduces to a constant because the arc takes a fixed 0.86 of the width. The two sheet-closing steps deliberately tap the dimmed surround rather than the corner glyph: the surround is itself a close control, so those presses cannot miss and leave the sheet covering PLAY. The intermission also releases itself after 7 s, so a missed RESUME cannot park the run. The run ends on the fifth let-through phrase at 65.0 s, and a single tap can never rescue a phrase (one hit out of three or more notes still loses half of them), so the run clock at the last shot is exactly 65 s after the first gameplay frame whenever that frame lands - the closing card is on screen by then no matter how long the scene took to load. The first step blocks on waitLoader rather than a fixed wait: the MENU scene shows the template SplashPanel loader on cold launch too, and a 3 s wait captured that loader instead of the menu (run 2026-10-01), which offset every later tap by a scene.",
+  "steps": [
+    { "waitLoader": true, "shot": "01_MenuScreen" },
+    { "tapFrac": [0.8945, 0.0674], "label": "SETTINGS", "wait": 2.2, "shot": "02_SettingsSheet" },
+    { "tapFrac": [0.5000, 0.9000], "label": "CLOSE_SETTINGS", "wait": 1.4 },
+    { "tapFrac": [0.5000, 0.7993], "label": "HOW_TO_PLAY", "wait": 2.2, "shot": "03_HowToPlay" },
+    { "tapFrac": [0.5000, 0.9300], "label": "CLOSE_HOW_TO", "wait": 1.4 },
+    { "tapFrac": [0.5000, 0.7337], "label": "PLAY", "waitLoader": true, "shot": "04_GameScreen" },
+    { "tapFrac": [0.5000, 0.7180], "label": "GEM_CENTRE", "wait": 5.0, "shot": "05_GameScreen_echo" },
+    { "tapFrac": [0.3280, 0.7242], "label": "GEM_LEFT", "wait": 6.0, "shot": "06_GameScreen_streak" },
+    { "tapFrac": [0.9026, 0.0674], "label": "PAUSE", "wait": 3.0, "shot": "07_Intermission" },
+    { "tapFrac": [0.3068, 0.6812], "label": "RESUME", "wait": 4.0 },
+    { "wait": 50.0, "shot": "08_Result" }
+  ]
+}

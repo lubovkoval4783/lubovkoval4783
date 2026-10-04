@@ -1,0 +1,191 @@
+{
+  "style": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, deep violet velvet, glowing faceted jewels, saturated neon rim light",
+  "palette": [
+    "#16111E",
+    "#1E1630",
+    "#2A2138",
+    "#7740B1",
+    "#DA3B69",
+    "#F1C24A",
+    "#34B8AA",
+    "#F5EADB",
+    "#FF7EA3"
+  ],
+  "notes": "One art style for the whole project, repeated word for word at the head of every prompt (rule F.1c). Every sprite that takes part in the mechanic declares its orientation in words (rule C.8); the symmetric ones say so explicitly so nothing is mirrored by accident. No prompt argues about the background colour - the pipeline cuts the background away (rule F.1b). The six 9-sliced sprites (pedestal, hold ribbon, meter fill, curtain arch, stage haze, panel plate) ask for a uniform border and a flat stretchable middle, because their .meta gives them a real spriteBorder. There is no audio asset of any kind (rule C.20), no prompt contains the app name and no sprite carries lettering (hard rule 1) - the emblem is an abstract mark. The icon hero is the pearl star jewel.",
+  "assets": [
+    {
+      "name": "bg_main",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_main.png",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, deep violet velvet, glowing faceted jewels, saturated neon rim light, a small theatre stage seen head on, heavy violet velvet curtains drawn back to both sides, a warm gold footlight strip glowing along the apron, the near-black upper area left calm and empty, a soft amethyst haze across the middle, the lower third darkened and low contrast so controls read over it, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_game.png",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, deep violet velvet, glowing faceted jewels, saturated neon rim light, the same theatre stage pushed further back, curtains dimmed to near-black violet, a faint gold rim along the proscenium edges, the whole centre deliberately empty, dark and low contrast so gameplay reads on top of it, the upper third darkened so a readout stays legible, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_gem_amethyst",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_gem_amethyst.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, saturated neon rim light, one single faceted amethyst purple gemstone in a star cut with a bright glowing core and a thick dark contour, perfectly symmetric left to right, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_gem_ruby",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_gem_ruby.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, saturated neon rim light, one single faceted crimson pink gemstone in a star cut with a bright glowing core and a thick dark contour, perfectly symmetric left to right, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_gem_topaz",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_gem_topaz.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, saturated neon rim light, one single faceted golden topaz gemstone in a star cut with a bright glowing core and a thick dark contour, perfectly symmetric left to right, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_gem_jade",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_gem_jade.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, saturated neon rim light, one single faceted teal green gemstone in a star cut with a bright glowing core and a thick dark contour, perfectly symmetric left to right, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_gem_star",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_gem_star.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, saturated neon rim light, one single pearl white star cut jewel wearing a small three point jester crown, glowing softly, thick dark contour, perfectly symmetric left to right, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_gem_halo",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_gem_halo.png",
+      "orientation": "front view, radially symmetric, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, saturated neon rim light, one single soft round halo of warm light, a bright even ring with a completely hollow transparent middle and a gentle outward glow, radially symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_pulse_ring",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_pulse_ring.png",
+      "orientation": "front view, radially symmetric, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, saturated neon rim light, one single thin double concentric ring of gold light with a crisp edge and a completely hollow transparent middle, radially symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_spark_burst",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_spark_burst.png",
+      "orientation": "front view, radially symmetric, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, saturated neon rim light, one single four point sparkle burst of gold light with thin rays radiating evenly from the centre, radially symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_rank_star",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_rank_star.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, one single five point award star cut like a faceted gold gem with a thick dark contour, symmetric left to right, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_emblem_mark",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_emblem_mark.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, saturated neon rim light, one single abstract emblem, a faceted star cut jewel sitting inside the silhouette of a three horned jester crown, ornate and graphic, no letters and no words anywhere, symmetric left to right, one subject centred and fully inside the frame, no other objects, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_pedestal",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_pedestal.png",
+      "orientation": "front view, symmetric left to right; 9-sliced in its .meta with a left and right border, so the middle is stretched",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, one single wide low stage pedestal plate with a violet velvet top and a gold trim along its front edge, the left and right ends identical and the whole middle completely flat and featureless so it can be stretched, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_hold_ribbon",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_hold_ribbon.png",
+      "orientation": "vertical, light entering at the bottom edge and leaving at the top edge; 9-sliced in its .meta with a top and bottom border, so the middle is stretched",
+      "prompt": "cel-shaded toon game art, thick dark outlines, saturated neon rim light, one single vertical ribbon of glowing light entering at the bottom edge of the frame and leaving at the top edge, exactly the same width and colour along its whole length so the middle can be stretched, gold at the bottom fading to pearl white at the top, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_meter_fill",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_meter_fill.png",
+      "orientation": "horizontal, symmetric left to right; 9-sliced in its .meta with a left and right border, so the middle is stretched",
+      "prompt": "cel-shaded toon game art, thick dark outlines, saturated neon rim light, one single horizontal glowing bar with rounded caps at the left and right edges and a completely uniform flat middle so it can be stretched, bright core with a soft glow, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_curtain_arch",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_curtain_arch.png",
+      "orientation": "front view, symmetric left to right; 9-sliced in its .meta on all four sides, so the middle is stretched",
+      "prompt": "cel-shaded toon game art, thick dark outlines, theatrical stage lighting, one single tall portrait proscenium arch frame made of ornate gold scrollwork over violet velvet, a border running around all four edges of the frame and the entire middle completely hollow and transparent, symmetric left to right, one subject filling the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_stage_haze",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_stage_haze.png",
+      "orientation": "front view, symmetric left to right; 9-sliced in its .meta on all four sides, so the middle is stretched",
+      "prompt": "cel-shaded toon game art, saturated neon rim light, one single soft amethyst purple stage glow panel, a smooth even wash of violet light that fades gently towards every edge, no hard shapes inside it, one subject filling the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_panel_plate",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_panel_plate.png",
+      "orientation": "front view, symmetric; 9-sliced in its .meta on all four sides, so the middle is stretched",
+      "prompt": "cel-shaded toon game art, thick dark outlines, saturated neon rim light, one single rounded rectangular interface plate with a near-black violet face, a thin bright border of exactly the same width on all four sides and a soft inner glow, the middle left completely flat so it can be stretched, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_ui_back",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_ui_back.png",
+      "orientation": "side view, pointing LEFT, NOT symmetric - mirroring matters and the code never flips it",
+      "prompt": "cel-shaded toon game art, thick dark outlines, one single chevron arrow glyph made of a gold gem shard pointing to the LEFT side of the frame, thick stroke with a dark contour, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_ui_pause",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_ui_pause.png",
+      "orientation": "front view, symmetric left to right, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, one single pause glyph made of two thick vertical gold gem bars standing side by side with a dark contour, symmetric left to right, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_ui_close",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_ui_close.png",
+      "orientation": "front view, symmetric, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, one single close glyph made of two crossed diagonal gold gem shards forming an X with a dark contour, symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_ui_gear",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_ui_gear.png",
+      "orientation": "front view, radially symmetric, mirroring does not matter",
+      "prompt": "cel-shaded toon game art, thick dark outlines, one single settings gear glyph with even teeth all the way around and a round hole in the middle, pearl white fill with a dark contour, radially symmetric, one subject centred and fully inside the frame, no other objects, no text, not a photo, not photorealistic"
+    }
+  ]
+}
